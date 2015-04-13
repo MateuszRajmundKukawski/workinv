@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import *
+from .models import Employee, Project, Invent
 
 
 class EmployeeAdmin(admin.ModelAdmin):
@@ -12,7 +12,9 @@ class EmployeeAdmin(admin.ModelAdmin):
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('name', 'idname')
 class InventAdmin(admin.ModelAdmin):
-    list_display = ('posted_date',)
+    list_display = ('employee', 'project','worktype', 'posted_date', )
+
+
 
 admin.site.register(Employee, EmployeeAdmin)
 admin.site.register(Project, ProjectAdmin)

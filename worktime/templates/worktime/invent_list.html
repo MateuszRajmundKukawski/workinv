@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block 'content' %}
+    Lista invent
+<ul>
+    {% for row in object_list %}
+        <li>{{ row.employee }}</li>
+    {% endfor %}
+</ul>
+<ol>
+    {% for row in object_list %}
+        <li>{{ row }}</li>
+    {% endfor %}
+</ol>
+{% endblock %}
