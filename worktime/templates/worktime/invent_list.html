@@ -6,9 +6,12 @@
         <li>{{ row.employee }}</li>
     {% endfor %}
 </ul>
-<ol>
+<table border="5">
+    <th>projekt</th><th>pracownik</th><th>tryb</th><th>data</th>
     {% for row in object_list %}
-        <li>{{ row }}</li>
+       <tr>
+           <td>{{ row.project }}</td><td>{{row.employee}}<td>{{row.get_worktype_display}}<td>{{row.posted_date}}</td>
+       </tr>
     {% endfor %}
-</ol>
+</table>
 {% endblock %}

@@ -41,6 +41,6 @@ class Invent(models.Model):
         return "{employee} {project} {worktype} {posted_date}".format(
             employee=self.employee,
             project = self.project.name,
-            worktype = self.get_worktype_display(),
+            worktype = self.get_worktype_display(),# get_NAZWAPOLA_display
             posted_date = self.posted_date,
             )
