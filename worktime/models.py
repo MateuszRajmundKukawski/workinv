@@ -13,9 +13,9 @@ class Project(models.Model):
 
 
 class Employee(models.Model):
-    firstName = models.CharField('imie',max_length=25)
-    lastName = models.CharField('nazwisko',max_length=25)
-    emaliadress = models.EmailField()
+    firstName = models.CharField('imie',max_length=25, null=False)
+    lastName = models.CharField('nazwisko',max_length=25, null=False)
+    emaliadress = models.EmailField(null=False,)
 
     def __str__(self):
         return "{fname} {lname}".format(fname=self.firstName, lname=self.lastName)
