@@ -12,5 +12,5 @@ urlpatterns = [
     url(r'^invent/$', InventListView.as_view()),
     url(r'^formularz/$', InventFormView.as_view()),
     url(r'^pracownik/$', EmploeeyFormView.as_view()),
-    url(r'^pracownicy', EmployeeView.as_view()),
+    url(r'^pracownicy/$', EmployeeView.as_view()),
 ]

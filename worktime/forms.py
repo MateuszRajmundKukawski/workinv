@@ -11,5 +11,5 @@ class InventForm(forms.ModelForm):
 class EmployeeForm(forms.ModelForm):
     class Meta:
         model = Employee
-        fields =  ('firstName', 'lastName', 'emaliadress',)
+        fields =  '__all__'
 
