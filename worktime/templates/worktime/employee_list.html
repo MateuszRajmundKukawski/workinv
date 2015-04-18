@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block 'content' %}
+    Lista invent
+
+<table border="5">
+    <th>Imie</th><th>Nazwisko</th><th>email</th>
+    {% for row in object_list %}
+       <tr>
+           <td>{{ row.firstName }}</td><td>{{row.lastName}}<td>{{row.emaliadress}}</td>
+       </tr>
+    {% endfor %}
+</table>
+{% endblock %}
