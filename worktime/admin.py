@@ -6,6 +6,7 @@ from .models import Employee, Project, Invent
 
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = ('firstName', 'lastName', 'emaliadress')
+    search_fields = ['firstName', 'lastName', 'emaliadress']
 
 
 
